@@ -1,0 +1,52 @@
+.section-header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../imgs/header.png');
+  text-align: center;
+  color: white;
+}
+.brand-style-1 {
+  max-height: 90px;
+  max-width: 60%;
+  overflow: visible;
+  color: red;
+  margin: 0px 10px 0px 50px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.section-content {
+  height: 620px;
+  padding: 250px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+  color: black;
+}
+
+p {
+  margin: 0px;
+}
+.services {
+  background-color: #c4dfe6;
+}
+
+.portfolio {
+  background-color: #66a5ad;
+}
+
+.contact {
+  background-color: #003b46;
+}
+
+.header-text {
+  text-align: center;
+  width: 610px
+  max-width: 80%;
+}
