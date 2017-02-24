@@ -10,56 +10,350 @@
     <!-- Latest compiled and minified JavaScript -->
     <link href="style/styles.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+  <body data-spy="scroll" data-target="#my-navbar">
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
+      <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="profile-brand">
-            <a class="navbar-brand" href="#"><img align="left" alt="Brand" class="brand-style-1 img-rounded img-fluid" src="./imgs/kenlogo.png"/></a>
-          </div>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
+
+          <a href="#" class="navbar-brand">Ken Tran</a>
+        </div> <!-- end navbar-header -->
+        <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#faq">FaQ</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </header>
-    <div style="margin-top:51px">
-      <section class="section-header" id="about">
-        <div class="section-content">
-            <div class="col-lg-8 col-lg-offset-2 text-center header-text">
-              <h2>Husband, Business onwer, JS developer. If I love your problem, I will solve it no matter how hard it is!</h2>
-            </div>
         </div>
+      </div> <!-- end navbar-container -->
+    </nav>     <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Ken Tran JS lover</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="btn-group">
+          <a href="#" class="btn btn-lg btn-warning">Download App</a>
+          <a href="#" class="btn btn-lg btn-default">Visit store</a>
+          <a href="#" class="btn btn-lg btn-warning">Learn more</a>
+        </div>
+      </div> <!-- end container -->
+    </div> <!-- end jumbotron -->
+
+    <!-- about -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="about">
+          <h2>About <small>Get to know more about me</small></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <footer>Anh Do</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <footer>Khoa Do</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <footer>Anh Tran</footer>
+            </blockquote>
+          </div>
+        </div> <!-- end row -->
       </section>
-      <section class="services" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-              <h2>Who I am?</h2>
+    </div> <!-- end about -->
+
+    <!-- call to action -->
+    <section>
+      <div class="well">
+        <div class="container text-center">
+          <h3>Subscribe for more free stuff</h3>
+          <p>Enter your name and email</p>
+          <form class="form-inline" action="" method="post">
+            <div class="form-group">
+              <label for="subscription">Subscribe</label>
+              <input type="text" class="form-control" id="subscription" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Your email">
+            </div>
+            <button type="submit" class="btn btn-warning">Subscribe</button><hr>
+          </form>
+        </div>     <!-- end container -->
+      </div>     <!-- end well -->
+    </section>     <!-- end call to action -->
+
+    <!-- services-->
+    <div class="container">
+      <section>
+        <div class="page-header" id="services">
+          <h2>Services <small>Check out my services</small></h2>
+        </div>
+
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img class="img-responsive center-block" src="imgs/1.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3>1 website</h3>
+                <p>This is a caption</p>
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-responsive center-block" src="imgs/2.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3>2 website</h3>
+                <p>This is a caption</p>
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-responsive center-block" src="imgs/3.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3>3 website</h3>
+                <p>This is a caption</p>
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-responsive center-block" src="imgs/4.jpg" alt="Text of the image">
+              <div class="carousel-caption">
+                <h3>4 website</h3>
+                <p>This is a caption</p>
+              </div>
+            </div>
+          </div> <!-- end carousel inner -->
+          <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- end carousel -->
+      </section>
+    </div> <!-- end services -->
+
+    <!-- portfolio -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="portfolio">
+          <h2>Portfolio <small>Check out my portfolio</small></h2>
+        </div> <!-- end page header -->
+
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>This is the heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="imgs/portfolio-1.jpg" alt="Portfolio picture">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>This is the heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="imgs/portfolio-2.jpg" alt="Portfolio picture">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>This is the heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive" src="imgs/portfolio-3.jpg" alt="Portfolio picture">
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h4>This is the heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-star"></span>
+                <h4>This is the heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-play-circle"></span>
+                <h4>This is the heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
           </div>
         </div>
+
       </section>
-      <section class="portfolio" id="portfolio">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div> <!-- end portfolio -->
+
+    <!-- FaQ -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="faq">
+          <h2>FaQ <small>Engaging with clients</small></h2>
+        </div> <!-- end page header -->
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-1" data-toggle="collapse" data-parent="#accotdion">
+                  Question 1?
+                </a>
+              </div> <!-- end panel title -->
+              <div class="panel-collapse collapse in" id="collapse-1">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-2" data-toggle="collapse" data-parent="#accotdion">
+                  Question 2?
+                </a>
+              </div> <!-- end panel title -->
+              <div class="panel-collapse collapse" id="collapse-2">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-3" data-toggle="collapse" data-parent="#accotdion">
+                  Question 3?
+                </a>
+              </div> <!-- end panel title -->
+              <div class="panel-collapse collapse" id="collapse-3">
+                <div class="panel-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end panel -->
+        </div>
+
       </section>
-      <section class="contact" id="contact">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div> <!-- end container -->
+
+    <!-- contact -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="contact">
+          <h2>Contact <small>Keep in touch!</small></h2>
+        </div> <!-- end page header -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Send us a message:</p>
+
+            <address>
+              <strong>Ken Tran Productions</strong></br>
+              30 Cash st, </br>
+              Kingsbury, Vic </br>
+              Melbourne, Aus </br>
+              P: +614 49159695
+            </address>
+          </div>
+          <div class="col-lg-8">
+            <form action="" class="form-horizontal" >
+              <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+                </div>
+            </div> <!-- end form group -->
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="user-email" placeholder="Enter your email">
+                </div>
+            </div> <!-- end form group -->
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Message</label>
+                <div class="col-lg-10">
+                  <textarea name="user-message" id="user-message" class="form-control" rows="10" cols="20" placeholder="Your message"></textarea>
+                </div>
+            </div> <!-- end form group -->
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div> <!-- end row -->
+
       </section>
-    </div> <!-- /.container-fluid -->
+    </div> <!-- end contact -->
+    <hr>
+    <!-- footer -->
+    <footer>
+      <div class="container text-center">
+        <h3>Subscribe for more free stuff</h3>
+        <p>Enter your name and email</p>
+        <form class="form-inline" action="" method="post">
+          <div class="form-group">
+            <label for="subscription">Subscribe</label>
+            <input type="text" class="form-control" id="subscription" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Your email">
+          </div>
+          <button type="submit" class="btn btn-warning">Subscribe</button>
+        </form>
+        <hr>
+        <ul class="list-inline">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+        <p>&copy; Ken Tran Production 2016</p>
+      </div>     <!-- end container -->
+    </footer>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
